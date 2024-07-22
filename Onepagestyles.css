@@ -1,0 +1,950 @@
+html,body{
+    overflow-x: hidden;
+}
+#NavBar {
+    justify-content: space-between;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#NavBar ul li {
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: #18548d;
+}
+
+h2 {
+    color: #18548d;
+    font-weight: normal;
+}
+
+ul li:first-of-type {
+    color: aquamarine !important;
+}
+
+/* Tablet view (768px and up) */
+@media (max-width: 1024px) {
+    #NavBar {
+        padding-left: 20px;
+    }
+
+    #NavBar ul li {
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+    #NavBar {
+        flex-direction: column;
+        /* align-items: center; */
+        padding-left: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #NavBar h2 {
+        margin-bottom: 10px;
+    }
+
+    #NavBar div {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    #NavBar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #NavBar ul li {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Small mobile view (480px and below) */
+@media (max-width: 480px) {
+    #NavBar h2 {
+        font-size: 1.2em;
+    }
+
+    #NavBar ul li {
+        margin-top: 8px;
+        font-size: 0.9em;
+    }
+
+    #NavBar ul li button {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    #NavBar ul li select {
+        font-size: 0.9em;
+    }
+}
+/*            Website Template          */
+#moving {
+
+    text-align: center;
+}
+
+#moving h1 {
+    font-weight: bolder;
+    font-size: 60px;
+    color: #18548d;
+}
+
+#getbutton {
+    border: 0;
+    background-color: #2585cf;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+}
+
+#cards {
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.card-body {
+    padding-top: 50px;
+}
+
+/* Media Queries */
+
+/* For tablets (portrait and landscape) */
+@media (max-width: 768px) and (min-width:577px){
+    #moving {
+        margin-top: -80px;
+    }
+
+    #moving h1 {
+        font-size: 40px;
+    }
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cards .card {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+/* For mobile phones (landscape) */
+@media (max-width: 576px) and (min-width:401px) {
+    #moving {
+        margin-top: 30px;
+    }
+
+    #moving h1{
+        font-size: 15px;
+    }
+
+    #getbutton {
+        width: 120px;
+        height: 35px;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cards .card {
+        margin-bottom: 15px;
+        width: 90%;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 400px)  and (min-width:300px){
+    #moving h1,#moving {
+        font-size: 10px;
+    }
+    #getbutton {
+        width: 100px;
+        height: 30px;
+    }
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 300px;
+    }
+    #cards .card {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .card-body {
+        padding-top: 20px;
+    }
+}
+/* About Us */
+#about {
+    text-align: center;
+    margin-top: 150px;
+}
+#aboutcontent {
+    width: 1100px;
+    justify-content: space-between;
+}
+/* Media Queries */
+
+/* For tablets (portrait and landscape) */
+@media (max-width:992px) and (min-width:769px){
+    #about{
+        margin-top: 220px;
+    }
+}
+@media (max-width: 768px) and (min-width:577px){
+    #about{
+        margin-top: 800px;
+    }
+    #aboutcontent {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #aboutcontent div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+/* For mobile phones (landscape) */
+@media (max-width: 576px) and (min-width:401px) {
+    #about {
+        margin-top: 880px;
+    }
+
+    #about h4 {
+        font-size: 20px;
+    }
+    #about p {
+        font-size: 10px;
+    }
+    #aboutcontent {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #aboutcontent div {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    #aboutcontent p {
+        font-size: 14px;
+    }
+
+    #getbutton {
+        width: 50%;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 400px) and (min-width:200px) {
+    #about {
+        margin-top: 600px;
+
+    }
+
+    #about h4 {
+        font-size: 10px;
+    }
+
+    #about p {
+        font-size: 7px;
+    }
+
+    #aboutcontent {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #aboutcontent div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #aboutcontent p {
+        font-size: 12px;
+    }
+
+    #getbutton {
+        width: 100%;
+    }
+}
+/* Regarding Clients & Projects */
+#regarding{
+    margin-top: 100px;
+    background:#f5f9fc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.num{
+    color:#2585cf !important;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    #regarding .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #regarding .col {
+        margin-bottom: 20px;
+    }
+
+    .num {
+        font-size: 35px;
+    }
+}
+
+/* For mobile phones (landscape) */
+@media (max-width: 576px) {
+    #regarding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .num {
+        font-size: 30px;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 400px) {
+    #regarding {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .num {
+        font-size: 25px;
+    }
+
+    #regarding p {
+        font-size: 14px;
+    }
+}
+
+
+/* Video & para */
+#video{
+    margin-top: 70px;
+}
+[alt="about"]
+{
+    width:100%;
+}
+.para{
+    justify-content: start;
+    /* font-size: 15px; */
+    text-align: left;
+}
+.h4head{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+    color: #18548d;
+}
+@media (max-width:1199px) and (min-width:1001px)
+{
+    .para{
+        font-size: 10px;
+    }
+    .h4head{
+        font-size: 18px;
+    }
+}
+@media (max-width:1000px) and (min-width:769px)
+{
+    .para{
+        font-size: 10px;
+    }
+    .h4head{
+        font-size: 15px;
+    }
+    [alt="about"]
+    {
+        height:90%;
+    }
+}
+@media (max-width: 768px)  and (min-width:577px){
+    #video .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #video .col {
+        margin-bottom: 20px;
+    }
+
+    .h4head {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .para {
+        text-align: left;
+        font-size: 14px;
+    }
+}
+/* For mobile phones (landscape) */
+@media (max-width: 576px) and (min-width:401px){
+    #video {
+        margin-top: 50px;
+    }
+    [alt="about"] {
+        width: 100%;
+        height: 100%;
+    }
+    .h4head {
+        font-size: 9px;
+        text-align: left;
+    }
+    .para {
+        text-align: left;
+        font-size: 6px;
+    }
+}
+/* For mobile phones (portrait) */
+@media (max-width: 400px) and (min-width:300px) {
+    #video {
+        margin-top: 30px;
+    }
+    .h4head {
+        font-size: 5px;
+        text-align: left
+    }
+    .para {
+        text-align: left;
+        font-size: 6px;
+    }
+    #video .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    #video .col {
+        margin-bottom: 10px;
+    }
+}
+
+/*    Clients    */
+#clients img{
+    width: 120px;
+}
+#clients{
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background: #f5f9fc;
+    padding:30px 0px;
+}
+@media (max-width: 768px) {
+    #clients {
+        flex-wrap: wrap;
+    }
+
+    #clients img {
+        width: 30px;
+    }
+}
+
+/* For mobile phones (landscape) */
+@media (max-width: 576px) {
+    #clients {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    #clients img {
+        width: 40px;
+        margin: 10px;
+        margin-right: 0px;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 400px) {
+    #clients {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    #clients img {
+        width: 60px;
+        margin: 10px;
+    }
+}
+
+
+/*       Testimonials       */
+#test{
+    text-align: center;
+    margin-top: 40px;
+}
+#test h4{
+    color:#18548d;
+    font-weight: bold;
+}
+/*       Testmonials pictures */
+#testpara{
+    background:gainsboro;
+    text-align: left;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+   
+}
+.testimg{
+    border-radius: 50%;
+    height: 80px;
+    margin-right: 190px;
+    margin-top: -50px;
+    box-shadow:5px 5px 10px #f5f9fc;
+}
+#testimonials h6{
+    color:#18548d;
+    margin-top: 20px;
+    margin-right: 200px;
+}
+#testimonials{
+    margin-top: 30px;
+}
+#circles {
+    padding-left: 600px;
+}
+#circles i{
+    margin-left: 5px;
+}
+/* For tablets (portrait and landscape) */
+@media (max-width: 768px)  and (min-width:577px){
+    #testpara {
+        padding-bottom: 30px;
+        padding-top: 15px;
+    }
+
+    .testimg {
+        height: 70px;
+        margin-right: 150px;
+    }
+
+    #testimonials h6 {
+        margin-right: 150px;
+    }
+
+    .role {
+        margin-left: 60px;
+    }
+    #circles{
+        margin-left: -300px;
+    }
+}
+/* For mobile phones (landscape) */
+@media (max-width:999px) and (min-width:769px)
+{
+    #circles{
+        margin-left: -200px;
+    }
+}
+@media (max-width: 576px)  and (min-width:401px){
+    #testpara {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .testimg {
+        height: 60px;
+        margin-right: 100px;
+    }
+
+    #testimonials h6 {
+        margin-right: 100px;
+    }
+
+    .role {
+       margin-left: 80px;
+
+    }
+    #circles{
+        margin-left: -400px;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 400px) and (min-width:250px){
+    #testpara {
+        padding-bottom: 15px;
+        padding-top: 10px;
+        font-size: small;
+    }
+
+    .testimg {
+        height: 50px;
+        margin-right: 50px;
+    }
+
+    #testimonials h6 {
+        margin-right: 50px;
+        font-size: small;
+    }
+
+    .role {
+        font-size: 10px;
+        margin-left: 80px;
+    }
+    #circles{
+        margin-left: -470px;
+    }
+    #test p{
+        font-size: 1rem;
+    }
+}
+
+/*         Services      */
+#services{
+    background: #f4f8fb;
+    padding-bottom: 40px;
+}
+#serv{
+    text-align: center;
+    margin-top: 30px;
+}
+#icon{
+    margin-bottom: 30px;
+}
+@media (max-width:400px) and (min-width:300px){
+    #test{
+        font-size:10px ;
+    }
+    #cards{
+        margin-top: -10px;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    #serv{
+        font-size: 10px;
+    }
+}
+@media (max-width:576px) and (min-width:401px){
+    #cards{
+        margin-top: -10px;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    #serv{
+        font-size: 10px;
+    }
+}
+@media (max-width:768px) and (min-width:577px){
+    #cards{
+        margin-top: -10px;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    #serv{
+        font-size: 10px;
+    }
+}
+@media (max-width:992px) and (min-width:769px){
+    #cards{
+        flex-direction: row;
+        height: 30%;
+        width: 100%;
+    }
+    #serv{
+        font-size: 10px;
+    }
+}
+@media (max-width:1200px) and (min-width:993px){
+    #cards{
+        flex-direction: row;
+        height: 30%;
+        width: 90%;
+        gap: 10px;
+    }
+    #serv{
+        font-size: 20px;
+    }
+}
+
+/*      Call To Action       */
+#call{
+    background:#2585cf;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+#call p{
+    font-size: small;
+}
+#call h5{
+    font-weight: bold;
+}
+#callbutton{
+    border: #f4f8fb solid;
+    color: white;
+    background:#2585cf;
+    border-radius: 5%;
+    width:160px;
+}
+
+/*         Portfolio         */
+#portlist{
+    list-style: none;
+    justify-content: center;
+    
+}
+#portlist li{
+    padding-left: 50px;
+}
+#col1 img{
+    width:355px;
+    margin-bottom: 10px;
+}
+#col2 img{
+    width:355px;
+    margin-bottom: 10px;
+}
+#col3 img{
+    width:355px;
+    margin-bottom: 10px;
+}
+/* @media (max-width:576px) and (min-width:400px){
+    #col1 img,#col2 img,#col3 img{
+        
+    }
+} */
+@media screen and (max-width:990px) {
+    #portimages  .row{
+        display: flex;
+        flex-direction: column !important;
+    }
+    #portimages .row .col{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column !important;
+    }
+    #portimages img{
+        width:300px !important;
+        height: 300px !important;
+    }
+    
+}
+
+/*     TEAM           */
+#TEAM{
+    background:#f5f9fc ;
+    padding-top: 6px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+#team {
+    justify-content: space-between;
+}
+#team .card-body{
+    margin-top: -40px;
+}
+#team h5{
+    color:#18548d;
+}
+.card{
+    margin-top: 10px;
+}
+@media (max-width:400px) and (min-width:300px)
+{
+    #test h4,#test p{
+        font-size: 0.5rem;
+    }
+    .card h5{
+        font-size: 0.40rem;
+        justify-content: start;
+    }
+    .card p{
+        font-size: 0.3rem;
+    }
+    .card h5{
+        margin-top: 20px;
+    }
+    #team{
+        justify-content: space-between;
+    }
+}
+@media (max-width:675px) and (min-width:401px){
+    .card h5,.card p{
+        font-size: 0.70rem;
+    }
+    .card h5{
+        margin-top: 20px;
+    }
+}
+
+
+/*                Pricing               */
+#price{
+    justify-content: center;
+    margin-top: 40px;
+}
+#price h5{
+    color: #18548d;
+    margin-bottom: 15px;
+}
+.pricepara{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.buy{
+    margin-left: 70px;
+    border:black;
+    background-color:grey;
+}
+#price2:hover{
+    background-color: #2585cf;
+    color:white !important;
+    transform: scale(1.1);
+    justify-content: center;
+}
+/* .:hover{
+    transform: scale(1.1);
+    background-color: red; */
+/* } */
+#price{
+    gap: 30px;
+}
+#buy2:hover{
+    color:white;
+}
+@media (max-width:645px) and (min-width:300px){
+    .pricepara{
+        font-size: 0.25rem;
+    }
+    .buy{
+        align-items: center;
+        justify-content: center;
+        height: 10px;
+        margin-left: -3px;
+        font-size: 0.25rem;
+    }
+}
+
+/*     Frequently Asked Questikons     */
+#AskedQuestions{
+    background:#f5f9fc;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+#faqcard{
+    margin-bottom: -10px;
+    background:#2585cf;
+    color: white;
+}
+#FAQS{
+    margin-top: 20px;
+}
+#FAQS .accordion-item{
+    margin-bottom: 10px;
+}
+
+/*        Contact Us  */
+#contactusinfo{
+    margin-top: 20px;
+}
+#contactusinfo i{
+    height:40px;
+    width: 40px;
+    background: #2585cf;
+    color: white !important;
+    padding-top: 12px;
+    padding-left: 12px;
+    margin-bottom:40px;
+}
+#contactusinfo p{
+    margin-top: 15px;
+    margin-left: -60px;
+}
+#contactusinfo h6{
+    padding-left: 10px;
+}
+#ourinfo{
+    margin-left: 30px;
+}
+[name="subject"]{
+    width:540px;
+}
+#send{
+    margin-left: 170px;
+    margin-top: 10px;
+    width: 160px;
+    height: 45px;
+    background: #2585cf;
+    color: white;
+    border: 0;
+}
+@media (max-width:600px) and (min-width:400px){
+    textarea{
+        width:100%;
+    }
+}
+
+
+
+
+/*     footer */
+#foot{
+    margin-top: 50px;
+    background:#f5f9fc ;
+    padding-top: 20px;
+}
+#first{
+    text-align: left;
+}
+
+#fourth{
+    text-align: left;
+
+}
+#footer ul li{
+    list-style: none;
+    text-align: left !important;
+    color:black !important;
+}
+#footer h6,#footer h3{
+    text-align: left;
+    font-weight: bolder;
+}
+#footer i{
+    height:40px;
+    width:40px;
+    /* border:rgb(255, 166, 0) !important; */
+    padding-left: 12px;
+    padding-top: 12px;
+    background-color: rgb(222, 236, 244);
+}
+@media (max-width:886px) and (min-width:768px){
+    #footer ul li,#footer p{
+        font-size: 0.5rem;
+    }
+}
