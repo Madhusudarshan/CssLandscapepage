@@ -1,94 +1,18 @@
 html,body{
     overflow-x: hidden;
 }
-#NavBar {
-    justify-content: space-between;
-    padding-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
-#NavBar ul li {
-    list-style: none;
-    margin-right: 50px;
-    margin-top: 10px;
-    color: #18548d;
-}
-
-h2 {
+h1{
     color: #18548d;
     font-weight: normal;
+    margin-left: 50px;
 }
-
-ul li:first-of-type {
-    color: aquamarine !important;
+#nav1 li a{
+    margin-right: 30px;
+    color: #18548d;
 }
-
-/* Tablet view (768px and up) */
-@media (max-width: 1024px) {
-    #NavBar {
-        padding-left: 20px;
-    }
-
-    #NavBar ul li {
-        margin-right: 30px;
-        margin-top: 5px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-}
-
-/* Mobile view (768px and below) */
-@media (max-width: 768px) {
-    #NavBar {
-        flex-direction: column;
-        /* align-items: center; */
-        padding-left: 0;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    #NavBar h2 {
-        margin-bottom: 10px;
-    }
-
-    #NavBar div {
-        width: 100%;
-        /* text-align: center; */
-    }
-
-    #NavBar ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    #NavBar ul li {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-}
-
-/* Small mobile view (480px and below) */
-@media (max-width: 480px) {
-    #NavBar h2 {
-        font-size: 1.2em;
-    }
-
-    #NavBar ul li {
-        margin-top: 8px;
-        font-size: 0.9em;
-    }
-
-    #NavBar ul li button {
-        font-size: 0.9em;
-        padding: 5px 10px;
-    }
-
-    #NavBar ul li select {
-        font-size: 0.9em;
-    }
+#home{
+    color:aqua !important;
 }
 /*            Website Template          */
 #moving {
@@ -948,3 +872,4 @@ ul li:first-of-type {
         font-size: 0.5rem;
     }
 }
+/*  */
